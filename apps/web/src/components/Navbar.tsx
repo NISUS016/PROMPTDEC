@@ -10,6 +10,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { CardBuilder } from "@/components/CardBuilder";
 
 export function Navbar() {
   return (
@@ -34,9 +35,11 @@ export function Navbar() {
         </div>
 
         <div className="flex items-center gap-2">
-          <Button variant="ghost" size="icon" className="hidden sm:flex">
-            <Plus className="h-5 w-5" />
-          </Button>
+          <CardBuilder>
+            <Button variant="ghost" size="icon" className="hidden sm:flex">
+              <Plus className="h-5 w-5" />
+            </Button>
+          </CardBuilder>
           <Button variant="ghost" size="icon" className="hidden sm:flex">
             <Bell className="h-5 w-5" />
           </Button>

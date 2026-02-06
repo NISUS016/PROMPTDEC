@@ -17,6 +17,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Skeleton } from "@/components/ui/skeleton";
+import { CreateDeckDialog } from "@/components/CreateDeckDialog";
 
 interface Deck {
   id: string;
@@ -51,9 +52,7 @@ export default function HomePage() {
           <Button variant="outline" size="icon">
             <ListIcon className="h-4 w-4" />
           </Button>
-          <Button className="bg-primary hover:bg-primary/90">
-            <Plus className="mr-2 h-4 w-4" /> New Deck
-          </Button>
+          <CreateDeckDialog />
         </div>
       </div>
 
@@ -78,9 +77,11 @@ export default function HomePage() {
           <p className="mb-6 mt-2 text-sm text-muted-foreground max-w-sm">
             You haven't created any prompt decks yet. Start by creating your first deck to organize your AI prompts.
           </p>
-          <Button>
-            <Plus className="mr-2 h-4 w-4" /> Create First Deck
-          </Button>
+          <CreateDeckDialog>
+            <Button>
+              <Plus className="mr-2 h-4 w-4" /> Create First Deck
+            </Button>
+          </CreateDeckDialog>
         </div>
       ) : (
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
