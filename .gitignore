@@ -59,3 +59,6 @@ src-tauri/target/
 .cache/
 .temp/
 *.tmp
+
+.gemini/
+gha-creds-*.json
