@@ -14,12 +14,13 @@
 - **Backend Database Integration:**
   - Set up SQLAlchemy with support for SQLite (local) and PostgreSQL.
   - Created `models.py`, `schemas.py`, and `database.py`.
-  - Implemented initial CRUD endpoints for Decks in `main.py`.
+  - Implemented full CRUD endpoints for **Decks** (GET, POST, PUT, DELETE).
+  - Implemented full CRUD endpoints for **Cards** (GET, POST, PUT, DELETE, duplicate).
   - Added table creation on startup for development.
 
 ### **Current Status**
 - **Frontend:** Foundation ready (Phase 1C complete).
-- **Backend:** Database connected, initial CRUD for Decks implemented (Phase 1B in progress).
+- **Backend:** Phase 1B Complete (Full CRUD for Decks and Cards).
 - **Database:** Local SQLite initialized on startup; schema ready for PostgreSQL.
 
 ### **Next Objectives**
