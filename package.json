@@ -1,0 +1,22 @@
+{
+  "name": "promptdec",
+  "version": "0.1.0",
+  "description": "Personal prompt gallery styled as a TCG with semantic search",
+  "private": true,
+  "workspaces": [
+    "apps/web"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=apps/web",
+    "build": "npm run build --workspace=apps/web",
+    "setup:web": "npm install --workspace=apps/web"
+  },
+  "keywords": [
+    "prompt-management",
+    "semantic-search",
+    "tcg",
+    "cards"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
